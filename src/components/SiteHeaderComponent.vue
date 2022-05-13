@@ -23,4 +23,8 @@ export default {
 <style lang="scss" scoped>
 /* Import del foglio di stile */
 @import '@/assets/sass/partials/header.scss';
+/* Import delle variabili */
+@import '@/assets/sass/variables.scss';
+
+
 </style>

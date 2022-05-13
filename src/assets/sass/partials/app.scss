@@ -9,16 +9,22 @@
     /* Larghezza e altezza fisse */
     width: 100vw;
     height: 100vh;
+    /* Overflow dei componenti */
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* Stile della scrollbar - Per chrome */
+
+/* width of the entire scrollbar */
 #app::-webkit-scrollbar {
-  width: 10px;  /* width of the entire scrollbar */
+    width: 10px;  
 }
+/* color of the tracking area */
 #app::-webkit-scrollbar-track {
-  background: #f7f7f7;      /* color of the tracking area */
+    background: #f7f7f7;      
 }
+
 #app::-webkit-scrollbar-thumb {
     background-color: #1185b3;
     border-radius: 15px;       /* roundness of the scroll thumb */
