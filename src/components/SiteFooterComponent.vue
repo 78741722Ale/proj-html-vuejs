@@ -2,8 +2,13 @@
     <!-- /#site_footer -->
     <div id="site_footer">
         <!-- Upper footer goes here v -->
-        SiteFooter
+        <div class="container-fluid upper_footer">
+            Upper footer
+        </div>
         <!-- Under footer goes here v -->
+        <div class="container-fluid under_footer">
+            Under footer
+        </div>
     </div>
 </template>
 

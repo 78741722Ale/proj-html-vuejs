@@ -1,16 +1,14 @@
 <template>
     <!-- /#site_header -->  
     <div id="site_header">
-        <!-- Prova scrollbar -->
-        <div class="container h_prova">
-
-
-        </div>
-        
-        
         <!-- navbar goes here v -->
-        SiteHeader
+        <div class="container navbar_site">
+            Navbar
+        </div>
         <!--Jumbotron goes here v -->
+        <div class="container-fluid jumbotron_site">
+            Jumbotron
+        </div>
     </div>
 </template>
 
@@ -23,8 +21,4 @@ export default {
 <style lang="scss" scoped>
 /* Import del foglio di stile */
 @import '@/assets/sass/partials/header.scss';
-/* Import delle variabili */
-@import '@/assets/sass/variables.scss';
-
-
 </style>
