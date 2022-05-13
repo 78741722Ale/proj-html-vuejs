@@ -5,9 +5,21 @@
         <div :class="nav_cont">
             <div :class="nav_row">
                 <!-- Logo Avada -->
-                <div class="col-3 h-100 bg-info bordo">Logo</div>
+                <div class="col-3 ps-5 h-100 d-flex justify-content-start align-items-center">
+                    <img src="@/assets/img/finance_logo_1x.png" alt="Logo Aziendale">
+                </div>
                 <!-- Navbar -->
-                <div class="col-6 h-100 bg-warning bordo">Navbar</div>
+                <div class="col-6 h-100 bordo pe-5 flex_cent">
+                    <!-- Genera in modo dinamico -->
+                    <ul class="navbar_list gap-4">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Packages</li>
+                        <li>Insight</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!--Jumbotron goes here v -->
@@ -22,13 +34,10 @@ export default {
     data() {
         return {
             /* Classi Dinamiche - Navbar */
-            nav_cont: "container d-flex justify-content-center navbar_site p-0",
-            nav_row: "row d-flex justify-content-between align-content-center w-100 h-100 bg-danger p-0"
+            nav_cont: "container-fluid d-flex justify-content-center navbar_site p-0",
+            nav_row: "row d-flex justify-content-between align-content-center w-100 h-100 p-0",          
         }
     },
-
-
-
 }
 </script>
 

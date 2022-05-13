@@ -29,6 +29,7 @@
             </div>
         </div>        
         <!-- Speciality services goes here v -->
+        <!-- Tutto contenuto dinamico le cards sono da estrarre in v-for -->
         <div class="container spec_services cont_cent">
             <div class="row flex_cent h-100 w-100 p-0 flex-wrap">
                 <!-- Descrizione delle specialità h-40 -->
@@ -53,6 +54,7 @@
             </div>        
         </div>  
         <!-- List cards of Feedback goes here v -->
+        <!-- Tutto contenuto dinamico le col sono da estrarre in v-for -->
         <div class="container-fluid cards_feed cont_cent">
             <div class="row flex_cent h-100 w-100">
                 <!-- Event Elevate -->
