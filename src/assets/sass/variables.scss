@@ -20,78 +20,13 @@ $Nile-Blue-color: rgba(26, 49, 84, 1);
 $Shark-color: rgba(25, 25, 31, 1);
 $Half-baked-color: rgba(134, 197, 202, 1);
 
-/*#region Container dell'header */
-
-/* Altezze e larghezze fisse - Header */
-.navbar_site {
-    width: 100%;
-    height: 70px;
-    background-color: $Half-baked-color;
-}
-.jumbotron_site {
-    width: 100%;
-    height: 700px;
-    background-color: $Steel-blue-color;
-}
-
-/*#endregion */
-
-/*#region Container dell'Main */
-
-/* Altezze e larghezze fisse - Main */
-.partner_site {
-    width: 100%;
-    height: 120px;
-    background-color: $Viking-color;
-}
-.cloud_finance {
-    width: 100%; 
-    height: 580px;
-    background-color: $Lynch-color;   
-}
-.spec_services {
-    width: 100%;
-    height: 720px;
-    background-color: $Viking-color;
-}
-.communities {
-    width: 100%;
-    height: 500px; 
-    background-color: $Mandys-pink-color;     
-}
-.feedback {
-    width: 100%;
-    height: 250px; 
-    background-color: $San-marino-color; 
-}
-.cards_feed {
-    width: 100%;
-    height: 420px;
-    background-color: $Steel-blue-color; 
-}
-.cta_site {
-    width: 100%;
-    height: 400px;
-    background-color: $Viking-color;
-}
-
-/*#endregion */
-
-/*# region Site Footer */
-.upper_footer {
-    width: 100%;
-    height: 240px;
-    background-color: $Mandys-pink-color;
-}
-
-.under_footer {
-    width: 100%;
-    height: 90px;
-    background-color: $Dusty-gray-color;
+/* bordo visibile per vedere blocchi */
+.bordo {
+    border: 2px solid black;
 }
 
 
-/*#endregion */
+
 
 
 
