@@ -25,6 +25,20 @@ $Half-baked-color: rgba(134, 197, 202, 1);
     border: 2px solid black;
 }
 
+/* Costante display flex che si ripete */
+.flex_cent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Properties dei container */
+.cont_cent {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
 
 
 
