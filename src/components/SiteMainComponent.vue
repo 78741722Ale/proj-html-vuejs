@@ -33,26 +33,33 @@
             </div>
         </div>
         <!--Cloud finance goes here v -->
+        <!-- Non ancora concluso -->        
         <div class="container cont_cent cloud_finance">
             <div class="row h-100 w-100 p-0 flex_cent">
                 <!-- Learn more e lorem picsum -->
-                <div class="col-6 h-75 bordo">
-                    <!-- Title -->
-                    <h2>Cloud Base Finance</h2>
-                    <!-- Primo lorem -->
-                    <p>
+                <div class="col-6 h-100 flex_cent">
+                    <div class="col-12 h-75 cloud_desc d-flex flex-column justify-content-center align-items-start">
+                        <!-- Title -->
+                        <h2 class="pb-2">Cloud Base Finance</h2>
+                        <!-- Primo lorem -->
+                        <p class="pb-2">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                         Rerum neque officiis earum? Quaerat quisquam at dolores sint eius sunt unde!
-                    </p>
-                    <!-- Secondo Lorem -->
-                    <p>
+                        </p>
+                        <!-- Secondo Lorem -->
+                        <p class="pb-2">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                         Rerum neque officiis earum? Quaerat quisquam at dolores sint eius sunt unde!
-                    </p>                    
+                        </p>  
+                        <!-- Button learn more -->
+                        <button class="btn btn-primary"> Learn More</button>
+                    </div>
                 </div>
                 <!-- Immagine grafico -->
-                <div class="col-6 h-75 bordo">
-
+                <div class="col-6 h-100 flex_cent">
+                    <div class="col-12 h-75 flex_cent">
+                        <img src="@/assets/img/graph-600x457.jpg" alt="Grafico" srcset="">
+                    </div>
                 </div>
             </div>
         </div>        
@@ -61,9 +68,88 @@
         <div class="container-fluid spec_services cont_cent">
             <div class="row flex_cent h-100 w-100 p-0 flex-wrap">
                 <!-- Descrizione delle specialità h-40 -->
-                <div class="col-12 bordo h-50">specialità</div>
+                <div class="col-6 h_40 flex_cent flex-column">
+                    <!-- titolo -->
+                    <h2 class="pb-4">Specialty Services</h2>
+                    <!-- Paragrafo -->                   
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos commodi totam autem, 
+                        nesciunt deleniti dolorem eos reprehenderit consequatur excepturi ea?
+                    </p>
+                </div>
                 <!-- Card dei servizi -->
-                <div class="col-12 bordo h-50">Card dei servizi</div>
+                <div class="col-8 gap-5 h_60 flex_cent p-0">
+                    <!-- Queste card sono dinamiche v-for --> 
+                    <div class="col-3 product_service_card h-75 flex_cent flex-column">
+                        <!-- Icona superiore e titolo --> 
+                        <div class="col-9 h_30 bordo flex_cent flex-column">
+                            <!-- Logo (da font-awesome) -->
+                            <div class="col-12 h_60"></div>
+                            <!-- Nome prodotto -->                            
+                            <div class="col-12 h_40 ">
+                                <h3>Lorem ipsum</h3>
+                            </div>
+                        </div>
+                        <!-- lorem ipsum --> 
+                        <div class="h_60 col-10 bordo flex_cent">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis velit doloremque tenetur quam deleniti sed at 
+                                minus aperiam ipsa qui inventore consectetur,
+                            </p>
+                        </div>
+                        <!-- Bottone learn more -->                    
+                        <div class="h_10 w-100 flex_cent">
+                            <button class="btn btn-primary w-100">Learn More</button>
+                        </div>
+                    </div>
+                    <!-- Queste card sono dinamiche v-for --> 
+                    <div class="col-3 product_service_card h-75 flex_cent flex-column">
+                        <!-- Icona superiore e titolo --> 
+                        <div class="col-9 h_30 bordo flex_cent flex-column">
+                            <!-- Logo (da font-awesome) -->
+                            <div class="col-12 h_60"></div>
+                            <!-- Nome prodotto -->                            
+                            <div class="col-12 h_40 ">
+                                <h3>Lorem ipsum</h3>
+                            </div>
+                        </div>
+                        <!-- lorem ipsum --> 
+                        <div class="h_60 col-10 bordo flex_cent">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis velit doloremque tenetur quam deleniti sed at 
+                                minus aperiam ipsa qui inventore consectetur,
+                            </p>
+                        </div>
+                        <!-- Bottone learn more -->                    
+                        <div class="h_10 w-100 flex_cent">
+                            <button class="btn btn-primary w-100">Learn More</button>
+                        </div>
+                    </div>
+                    <!-- Queste card sono dinamiche v-for --> 
+                    <div class="col-3 product_service_card h-75 flex_cent flex-column">
+                        <!-- Icona superiore e titolo --> 
+                        <div class="col-9 h_30 bordo flex_cent flex-column">
+                            <!-- Logo (da font-awesome) -->
+                            <div class="col-12 h_60"></div>
+                            <!-- Nome prodotto -->                            
+                            <div class="col-12 h_40 ">
+                                <h3>Lorem ipsum</h3>
+                            </div>
+                        </div>
+                        <!-- lorem ipsum --> 
+                        <div class="h_60 col-10 bordo flex_cent">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis velit doloremque tenetur quam deleniti sed at 
+                                minus aperiam ipsa qui inventore consectetur,
+                            </p>
+                        </div>
+                        <!-- Bottone learn more -->                    
+                        <div class="h_10 w-100 flex_cent">
+                            <button class="btn btn-primary w-100">Learn More</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>           
         </div>  
         <!-- Our Communities goes here v -->

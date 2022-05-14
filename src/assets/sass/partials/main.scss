@@ -14,7 +14,7 @@
 .spec_services {
     width: 100%;
     height: 720px;
-    background-color: $Viking-color;
+    background-color: $Speciality-services-bg-color;
 }
 .communities {
     width: 100%;
@@ -38,3 +38,26 @@
 }
 
 /*#endregion */
+
+/* Cloud Base Finance */
+.cloud_desc {
+    text-align: left;
+}
+
+/* Speciality services */
+.h_40 {
+    height: 40%;
+}
+.h_60 {
+    height: 60%;
+}
+.h_10 {
+    height: 10%;
+}
+.h_30 {
+    height: 30%;
+}
+
+.product_service_card {
+    background-color: $white-color;
+}
