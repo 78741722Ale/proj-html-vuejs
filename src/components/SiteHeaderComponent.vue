@@ -2,6 +2,7 @@
     <!-- /#site_header -->  
     <div id="site_header">
         <!-- navbar goes here v -->
+        <!-- Da sistemare -->
         <div :class="nav_cont">
             <div :class="nav_row">
                 <!-- Logo Avada -->
@@ -9,21 +10,25 @@
                     <img src="@/assets/img/finance_logo_1x.png" alt="Logo Aziendale">
                 </div>
                 <!-- Navbar -->
-                <div class="col-6 h-100 bordo pe-5 flex_cent">
+                <div class="col-6 h-100 gap-5 d-flex justify-content-start align-items-center">
                     <!-- Genera in modo dinamico -->
-                    <ul class="navbar_list gap-4">
+                    <ul class="navbar_list gap-5">
                         <li>Home</li>
                         <li>About</li>
                         <li>Services</li>
                         <li>Packages</li>
                         <li>Insight</li>
-                        <li>Contact</li>
                     </ul>
+                    <!-- Button (da sistemare) -->
+                    <button class="btn btn-primary">Contact</button>
                 </div>
             </div>
         </div>
         <!--Jumbotron goes here v -->
-        <div class="container-fluid jumbotron_site">Jumbotron</div>
+        <!-- Da sistemare -->
+        <div class="container-fluid jumbotron_site">
+            <img src="@/assets/img/home_finance_slider_bg.jpg" alt="Jumbotron">
+        </div>
     </div>
 </template>
 

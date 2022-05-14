@@ -3,34 +3,62 @@
     <!-- Qui non metto classi interattive per ora altrimenti, lo faccio al refactoring, troppi container -->
     <div id="site_main">
         <!--Aziende Partner goes here v (inserisci in modo dinamico) -->
-        <div class="container partner_site cont_cent">
-            <div class="row w-100 h-100 bg-warning p-0 flex_cent">
-                <!-- 1° logo -->
-                <div class="col-2 h-100 bordo bg-info">1° Logo</div>
-                <!-- 2° logo -->
-                <div class="col-2 h-100 bordo bg-info">2° Logo</div>  
-                <!-- 3° logo -->
-                <div class="col-2 h-100 bordo bg-info">3° Logo</div>
-                <!-- 4° logo -->
-                <div class="col-2 h-100 bordo bg-info">4° Logo</div>
-                <!-- 5° logo -->
-                <div class="col-2 h-100 bordo bg-info">5° Logo</div>  
-                <!-- 6° logo -->
-                <div class="col-2 h-100 bordo bg-info">6° Logo</div>                       
+        <!-- Non ancora concluso -->
+        <div class="container-fluid partner_site cont_cent">
+            <div class="row w-100 h-100 p-0 flex_cent">
+                <!-- 1° logo - Electricity -->
+                <div class="col-2 h-100 flex_cent">
+                    <img src="@/assets/img/client-logo-7.png" alt="Electricity">
+                </div>
+                <!-- 2° logo - Event Elevate -->
+                <div class="col-2 h-100 flex_cent">
+                    <img src="@/assets/img/client-logo-8.png" alt="Event Elevate">
+                </div>
+                <!-- 3° logo - Bonjour -->
+                <div class="col-2 h-100 flex_cent">
+                    <img src="@/assets/img/client-logo-9.png" alt="Bonjour">
+                </div>
+                <!-- 4° logo - Bridge -->
+                <div class="col-2 h-100 flex_cent">
+                    <img src="@/assets/img/client-logo-5.png" alt="Bridge">
+                </div>
+                <!-- 5° logo - Guardian -->
+                <div class="col-2 h-100 flex_cent">
+                    <img src="@/assets/img/client-logo-6.png" alt="Guardian">
+                </div> 
+                <!-- 6° logo - Electricity -->
+                <div class="col-2 h-100 flex_cent">
+                    <img src="@/assets/img/client-logo-7.png" alt="Electricity">
+                </div>                      
             </div>
         </div>
         <!--Cloud finance goes here v -->
         <div class="container cont_cent cloud_finance">
-            <div class="row h-100 w-100 p-0 bordo flex_cent">
+            <div class="row h-100 w-100 p-0 flex_cent">
                 <!-- Learn more e lorem picsum -->
-                <div class="col-6 h-75 bordo">Learn more</div>
+                <div class="col-6 h-75 bordo">
+                    <!-- Title -->
+                    <h2>Cloud Base Finance</h2>
+                    <!-- Primo lorem -->
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Rerum neque officiis earum? Quaerat quisquam at dolores sint eius sunt unde!
+                    </p>
+                    <!-- Secondo Lorem -->
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Rerum neque officiis earum? Quaerat quisquam at dolores sint eius sunt unde!
+                    </p>                    
+                </div>
                 <!-- Immagine grafico -->
-                <div class="col-6 h-75 bordo">Immagine grafico</div>
+                <div class="col-6 h-75 bordo">
+
+                </div>
             </div>
         </div>        
         <!-- Speciality services goes here v -->
         <!-- Tutto contenuto dinamico le cards sono da estrarre in v-for -->
-        <div class="container spec_services cont_cent">
+        <div class="container-fluid spec_services cont_cent">
             <div class="row flex_cent h-100 w-100 p-0 flex-wrap">
                 <!-- Descrizione delle specialità h-40 -->
                 <div class="col-12 bordo h-50">specialità</div>
