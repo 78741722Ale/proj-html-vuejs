@@ -1,7 +1,10 @@
 <template>
-    <!-- Da sistemare -->
+    <!-- Jumbotron Image -->
     <div :class="jumbo_cont">
+        <!-- Jumbotron Image -->        
         <img src="@/assets/img/home_finance_slider_bg.jpg" alt="Jumbotron">
+        <!-- Jumbotron Title -->
+        <h1 class="jumbo_title">Lorem ipsum dolor sit.</h1>
     </div>
 </template>
 

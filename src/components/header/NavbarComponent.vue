@@ -1,15 +1,15 @@
 <template>
-  <div class="col-6 h-100 gap-5 d-flex justify-content-start align-items-center">
+  <div class="col-6 h-100 gap-4 d-flex justify-content-end align-items-center">
     <!-- Genera in modo dinamico -->
-    <ul class="navbar_list gap-5">
-      <li>Home</li>
-      <li>About</li>
-      <li>Services</li>
-      <li>Packages</li>
-      <li>Insight</li>
+    <ul class="navbar_list gap-4 h-100">
+      <li><a href="#">Home</a></li> 
+      <li><a href="#">About</a></li> 
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Packages</a></li>
+      <li><a href="#">Insight</a></li>      
     </ul>
     <!-- Button (da sistemare) -->
-    <button class="btn btn-primary">Contact</button>
+    <button class="btn btn-primary btn_contact">Contact</button>
   </div>
 </template>
 
