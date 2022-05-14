@@ -1,4 +1,4 @@
-/* Qui palette colori figma/cartella */
+/* Qui palette colori figma verificati  */
 
 /* Color Cube */
 $white-color : rgba(255, 255, 255, 1);
@@ -6,6 +6,11 @@ $jumbotron-bg-color: rgba(22, 41, 69, 1);
 $partner-bg-color : rgba(249, 249, 249, 1);
 $Speciality-services-bg-color: rgba(249, 249, 249, 1);
 $cloud-finance-bg-color: rgba(255, 255, 255, 1);
+$our-common-title-color: rgba(74, 117, 178, 1);
+
+
+/* Qui palette colori figma/cartella  */
+
 $Baltic-sea-color : rgba(28, 27, 33, 1);
 $Viking-color : rgba(93, 222, 204, 1);
 $San-marino-color : rgba(66, 110, 173, 1);
@@ -33,6 +38,11 @@ $Half-baked-color: rgba(134, 197, 202, 1);
 .flex_cent {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+.flex_bet {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 

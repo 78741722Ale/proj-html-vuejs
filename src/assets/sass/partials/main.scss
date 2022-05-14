@@ -57,7 +57,28 @@
 .h_30 {
     height: 30%;
 }
-
 .product_service_card {
     background-color: $white-color;
+}
+
+/* Our Communities */
+.col-5 {   
+    img {
+    width: 100%;
+    height: 100%;
+    }
+}
+.col-4 {
+    /* titolo delle percentuali our communities */
+    h1 {
+        color: $our-common-title-color;
+    }
+    /* Descrizione delle percentuali */
+    span {
+        font-size: 0.85rem;
+    }
+}
+
+.com_numbers {
+    background-color: $white-color;   
 }

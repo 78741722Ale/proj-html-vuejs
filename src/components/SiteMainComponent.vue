@@ -7,27 +7,27 @@
         <div class="container-fluid partner_site cont_cent">
             <div class="row w-100 h-100 p-0 flex_cent">
                 <!-- 1° logo - Electricity -->
-                <div class="col-2 h-100 flex_cent">
+                <div class="col-2 p-0 h-100 flex_cent">
                     <img src="@/assets/img/client-logo-7.png" alt="Electricity">
                 </div>
                 <!-- 2° logo - Event Elevate -->
-                <div class="col-2 h-100 flex_cent">
+                <div class="col-2 p-0 h-100 flex_cent">
                     <img src="@/assets/img/client-logo-8.png" alt="Event Elevate">
                 </div>
                 <!-- 3° logo - Bonjour -->
-                <div class="col-2 h-100 flex_cent">
+                <div class="col-2 p-0 h-100 flex_cent">
                     <img src="@/assets/img/client-logo-9.png" alt="Bonjour">
                 </div>
                 <!-- 4° logo - Bridge -->
-                <div class="col-2 h-100 flex_cent">
+                <div class="col-2 p-0 h-100 flex_cent">
                     <img src="@/assets/img/client-logo-5.png" alt="Bridge">
                 </div>
                 <!-- 5° logo - Guardian -->
-                <div class="col-2 h-100 flex_cent">
+                <div class="col-2 p-0 h-100 flex_cent">
                     <img src="@/assets/img/client-logo-6.png" alt="Guardian">
                 </div> 
                 <!-- 6° logo - Electricity -->
-                <div class="col-2 h-100 flex_cent">
+                <div class="col-2 p-0 h-100 flex_cent">
                     <img src="@/assets/img/client-logo-7.png" alt="Electricity">
                 </div>                      
             </div>
@@ -65,6 +65,7 @@
         </div>        
         <!-- Speciality services goes here v -->
         <!-- Tutto contenuto dinamico le cards sono da estrarre in v-for -->
+        <!-- Non ancora concluso -->        
         <div class="container-fluid spec_services cont_cent">
             <div class="row flex_cent h-100 w-100 p-0 flex-wrap">
                 <!-- Descrizione delle specialità h-40 -->
@@ -78,7 +79,7 @@
                     </p>
                 </div>
                 <!-- Card dei servizi -->
-                <div class="col-8 gap-5 h_60 flex_cent p-0">
+                <div class="col-8 gap-5 h_60 d-flex justify-content-center align-items-start p-0">
                     <!-- Queste card sono dinamiche v-for --> 
                     <div class="col-3 product_service_card h-75 flex_cent flex-column">
                         <!-- Icona superiore e titolo --> 
@@ -148,17 +149,49 @@
                             <button class="btn btn-primary w-100">Learn More</button>
                         </div>
                     </div>
-
                 </div>
             </div>           
         </div>  
         <!-- Our Communities goes here v -->
+        <!-- Non ancora concluso (valuta uso dinamico) -->         
         <div class="container-fluid communities cont_cent ">
             <div class="row w-100 p-0 h-100 flex_cent">
                 <!-- Call to action -->
-                <div class="col-5 h-100 bordo">Call to action</div>
+                <div class="col-5 p-0 h-100">
+                    <img src="@/assets/img/counters-bg-image.jpg" alt="Call to action">
+                </div>
                 <!-- Percentuali (dinamiche) -->
-                <div class="col-7 h-100 bordo">Percentuali</div>
+                <div class="col-7 p-0 h-100 flex_cent flex-column com_numbers">
+                    <!-- Percentuali Sopra --> 
+                    <!-- Andrebbero fatte dinamiche tramite array di oggetto  -->
+                    <div class="col-8 h-25 flex_bet">
+                        <!-- Sinistra -->
+                        <!-- Queste col - 4 valuta di farle dinamiche in v-for con array di oggetto -->
+                        <div class="col-4 p-0 h-100 flex_cent flex-column">
+                            <h1 class="mb-0">86%</h1>
+                            <span>Successful Applications</span>
+                        </div>
+                        <!-- Destra -->
+                        <div class="col-4 h-100 flex_cent flex-column">
+                            <h1 class="mb-0">94%</h1>
+                            <span>Return of Investment</span>                            
+                        </div>
+                    </div>
+                    <!-- Percentuali Sotto -->
+                    <div class="col-8 h-25 flex_bet">
+                        <!-- Sinistra -->
+                        <!-- Queste col - 4 valuta di farle dinamiche in v-for con array di oggetto -->
+                        <div class="col-4 p-0 h-100 flex_cent flex-column">
+                            <h1 class="mb-0">92%</h1>
+                            <span>Applied Solution</span>
+                        </div>
+                        <!-- Destra -->
+                        <div class="col-4 h-100 flex_cent flex-column">
+                            <h1 class="mb-0">100%</h1>
+                            <span>Completely Secure</span>                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>      
         <!-- Client Feedback goes here v -->
