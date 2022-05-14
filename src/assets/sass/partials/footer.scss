@@ -2,7 +2,8 @@
 .upper_footer {
     width: 100%;
     height: 240px;
-    background-color: $Mandys-pink-color;
+    background-color: $upperfooter-bg-color;
+    color: $white-color;
 }
 
 .under_footer {
@@ -12,3 +13,11 @@
 }
 
 /*#endregion */
+.foot_lists {
+    list-style: none;
+    line-height: 2.5rem;
+    li {
+        color: $upperfooter-list-color;
+    }
+}
+
