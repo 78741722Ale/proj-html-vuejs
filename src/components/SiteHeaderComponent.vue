@@ -26,7 +26,7 @@
         </div>
         <!--Jumbotron goes here v -->
         <!-- Da sistemare -->
-        <div class="container-fluid jumbotron_site">
+        <div class="container-fluid jumbotron_site p-0">
             <img src="@/assets/img/home_finance_slider_bg.jpg" alt="Jumbotron">
         </div>
     </div>

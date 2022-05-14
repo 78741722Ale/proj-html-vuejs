@@ -18,18 +18,17 @@
 }
 .communities {
     width: 100%;
-    height: 500px; 
-    background-color: $Mandys-pink-color;     
+    height: 500px;    
 }
 .feedback {
     width: 100%;
     height: 250px; 
-    background-color: $San-marino-color; 
+    background-color: $feedback-bg-color; 
 }
 .cards_feed {
     width: 100%;
     height: 420px;
-    background-color: $Steel-blue-color; 
+    background-color: $cloud-finance-bg-color;  
 }
 .cta_site {
     width: 100%;
@@ -78,7 +77,19 @@
         font-size: 0.85rem;
     }
 }
-
+/* Comunities numbers */
 .com_numbers {
     background-color: $white-color;   
+}
+
+/* Client Feedback */
+
+.bordo_feedback {
+    border: 0.1px solid rgb(133, 130, 130);
+}
+
+.rtt_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

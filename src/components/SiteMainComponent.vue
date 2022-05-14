@@ -195,28 +195,124 @@
             </div>
         </div>      
         <!-- Client Feedback goes here v -->
+        <!-- Non ancora concluso -->          
         <div class="container-fluid feedback cont_cent">
-            <div class="row w-100 h-100 flex_cent bordo">
-                Client Feedback
+            <div class="row w-100 h-100 p-0 flex_cent">
+                <h2>Client Feedback</h2>
             </div>        
         </div>  
         <!-- List cards of Feedback goes here v -->
         <!-- Tutto contenuto dinamico le col sono da estrarre in v-for -->
         <div class="container-fluid cards_feed cont_cent">
-            <div class="row flex_cent h-100 w-100">
+            <div class="row flex_cent p-0 h-100 w-100">
                 <!-- Event Elevate -->
-                <div class="col-3 h-100 bordo flex_cent">Event Elevate</div>
+                <div class="col-3 h-100 p-0 flex_cent flex-column">
+                    <!-- Logo Aziendale e testo here -->
+                    <!-- Utilizza v-for dinamico -->
+                    <div class="col-12 h-75 bordo_feedback p-0 flex_cent flex-column">
+                        <!-- Logo -->
+                        <div class="col-6 h-25 flex_cent">
+                            <img src="@/assets/img/client-logo-4-200x87.png" alt="Event Elevate" srcset="">
+                        </div>
+                        <!-- Raccomandation -->                         
+                        <div class="col-9 h-50 flex_cent">
+                            <p>
+                                "Avada Finance offers a fantastic service! It is so easy to use and the
+                                customer support is the best around. This payment option is my number one
+                                choice. I always recommend it."
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Citazione goes here -->
+                    <!-- Utilizza v-for dinamico -->                    
+                    <div class="col-12 h-25 bordo_feedback p-0 flex_cent flex-column">
+                        <span class="text-uppercase"><strong>Andre Mendoza</strong></span>
+                        <span class="text-uppercase"><strong>Creative Market</strong></span>
+                    </div>                    
+                </div>
                 <!-- Bonjour Cafe -->
-                <div class="col-3 h-100 bordo flex_cent">Bonjour Cafe</div>
+                <div class="col-3 h-100 p-0 flex_cent flex-column">
+                    <!-- Logo Aziendale e testo here -->
+                    <!-- Utilizza v-for dinamico -->
+                    <div class="col-12 h-75 bordo_feedback p-0 flex_cent flex-column">
+                        <!-- Logo -->
+                        <div class="col-6 h-25 flex_cent">
+                            <img src="@/assets/img/client-logo-1-1-200x87.png" alt="Event Elevate" srcset="">
+                        </div>
+                        <!-- Raccomandation -->                         
+                        <div class="col-9 h-50 flex_cent">
+                            <p>
+                                "Avada Finance offers a fantastic service! It is so easy to use and the
+                                customer support is the best around. This payment option is my number one
+                                choice. I always recommend it."
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Citazione goes here -->
+                    <!-- Utilizza v-for dinamico -->                    
+                    <div class="col-12 h-25 bordo_feedback p-0 flex_cent flex-column">
+                        <span class="text-uppercase"><strong>Andre Mendoza</strong></span>
+                        <span class="text-uppercase"><strong>Creative Market</strong></span>
+                    </div>                    
+                </div>
                 <!-- Futuristic  -->
-                <div class="col-3 h-100 bordo flex_cent">Futuristic</div>
+                <div class="col-3 h-100 p-0 flex_cent flex-column">
+                    <!-- Logo Aziendale e testo here -->
+                    <!-- Utilizza v-for dinamico -->
+                    <div class="col-12 h-75 bordo_feedback p-0 flex_cent flex-column">
+                        <!-- Logo -->
+                        <div class="col-6 h-25 flex_cent">
+                            <img src="@/assets/img/client-logo-2-200x87.png" alt="Futuristic" srcset="">
+                        </div>
+                        <!-- Raccomandation -->                         
+                        <div class="col-9 h-50 flex_cent">
+                            <p>
+                                "Avada Finance offers a fantastic service! It is so easy to use and the
+                                customer support is the best around. This payment option is my number one
+                                choice. I always recommend it."
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Citazione goes here -->
+                    <!-- Utilizza v-for dinamico -->                    
+                    <div class="col-12 h-25 bordo_feedback p-0 flex_cent flex-column">
+                        <span class="text-uppercase"><strong>Andre Mendoza</strong></span>
+                        <span class="text-uppercase"><strong>Creative Market</strong></span>
+                    </div>                    
+                </div>
                 <!-- Electricity -->
-                <div class="col-3 h-100 bordo flex_cent">Electricity</div>
+                <div class="col-3 h-100 p-0 flex_cent flex-column">
+                    <!-- Logo Aziendale e testo here -->
+                    <!-- Utilizza v-for dinamico -->
+                    <div class="col-12 h-75 bordo_feedback p-0 flex_cent flex-column">
+                        <!-- Logo -->
+                        <div class="col-6 h-25 flex_cent">
+                            <img src="@/assets/img/client-logo-3-200x87.png" alt="Electricity" srcset="">
+                        </div>
+                        <!-- Raccomandation -->                         
+                        <div class="col-9 h-50 flex_cent">
+                            <p>
+                                "Avada Finance offers a fantastic service! It is so easy to use and the
+                                customer support is the best around. This payment option is my number one
+                                choice. I always recommend it."
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Citazione goes here -->
+                    <!-- Utilizza v-for dinamico -->                    
+                    <div class="col-12 h-25 bordo_feedback p-0 flex_cent flex-column">
+                        <span class="text-uppercase"><strong>Andre Mendoza</strong></span>
+                        <span class="text-uppercase"><strong>Creative Market</strong></span>
+                    </div>                    
+                </div>
             </div>
         </div>          
         <!-- Call to action goes here v -->
-        <div class="container-fluid cta_site">
-            Call to action
+        <!-- Non ancora concluso -->     
+        <div class="container-fluid flex_cent cta_site p-0">
+            <div class="row w-100 h-100">
+                <img class="rtt_img p-0" src="@/assets/img/ready_to_talk_cta_bg.jpg" alt="Ready to talk" srcset="">
+            </div>
         </div>  
     </div>
 </template>
