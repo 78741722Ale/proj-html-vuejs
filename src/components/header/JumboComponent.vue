@@ -4,7 +4,7 @@
         <!-- Jumbotron Image -->        
         <img src="@/assets/img/home_finance_slider_bg.jpg" alt="Jumbotron">
         <!-- Jumbotron Title -->
-        <h1 class="jumbo_title">Lorem ipsum dolor sit.</h1>
+        <h1 class="jumbo_title w-100">Rigth People. Rigth Investments.</h1>
     </div>
 </template>
 

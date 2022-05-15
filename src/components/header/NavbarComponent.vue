@@ -2,11 +2,8 @@
   <div class="col-6 h-100 gap-4 d-flex justify-content-end align-items-center">
     <!-- Genera in modo dinamico -->
     <ul class="navbar_list gap-4 h-100">
-      <li><a href="#">Home</a></li> 
-      <li><a href="#">About</a></li> 
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Packages</a></li>
-      <li><a href="#">Insight</a></li>      
+      <!-- Componente dinamico -->
+      <li v-for="(element, index) in navbar_services" :key="index"><a :href="element.ref">{{element.type}}</a></li>        
     </ul>
     <!-- Button (da sistemare) -->
     <button class="btn btn-primary btn_contact">Contact</button>
@@ -15,7 +12,39 @@
 
 <script>
 export default {
-    name: 'NavbarComponent'
+    name: 'NavbarComponent',
+    /* Componenti lista non ordinata  */
+    data() {
+      return {
+        navbar_services: [
+          /* Home  */
+          {
+            type: "Home",
+            ref: "Home"
+          },
+          /* About  */
+          {
+            type: "About",
+            ref: "About"
+          },
+          /* Services  */
+          {
+            type: "Services",
+            ref: "Services"
+          },
+          /* Packages  */
+          {
+            type: "Packages",
+            ref: "Packages"
+          },
+          /* Insight  */
+          {
+            type: "Insight",
+            ref: "Insight"
+          },                    
+        ]
+      }
+    },
 }
 </script>
 
