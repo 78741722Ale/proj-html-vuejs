@@ -137,13 +137,25 @@
     border-color: $navbar-static-btn-bg;
 }
 
-
-
 /*#endregion */
 
 
-
-
+/*#region FeedbackComponent */
+.title_feedback {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    position: relative    
+}
+.title_feedback:before {
+    content: "";
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    /* height: 1px; */
+    width: 20%;
+    border-bottom:2px solid black;
+}  
+/*#endregion */
 
 
 /* Our Communities */
