@@ -159,16 +159,27 @@
 
 /* Client Feedback - bordo superiore */
 .bordo_feed_up {
-    border-right: 0.05px solid rgb(192, 190, 190);
-    border-bottom: 0.05px solid rgb(192, 190, 190);
+    border-right: 0.05px solid rgb(214, 214, 214);
+    border-bottom: 0.05px solid rgb(214, 214, 214);
 }
 
 .bordo_feed_down {
-    border-right: 0.05px solid rgb(192, 190, 190);
+    border-right: 0.05px solid rgb(214, 214, 214);
 }
 
+.lofeed_text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
 
-
+.lofeed_title {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.lofeed_role {
+    font-size: 0.8rem;
+    color: rgb(168, 164, 164);
+}
 
 
 

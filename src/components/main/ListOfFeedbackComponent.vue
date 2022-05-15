@@ -9,12 +9,12 @@
                     <div :class="listOfFeedback_upper_zone">
                         <!-- Logo & Raccomandation -->
                         <div class="col-6 h-25 flex_cent"><img :src="element.logo_part" :alt="element.partner"></div>                        
-                        <div class="col-9 h-50 flex_cent"><p>{{element.text}}</p></div>
+                        <div class="col-9 h-50 flex_cent"><p class="lofeed_text">{{element.text}}</p></div>
                     </div>
                     <!-- Citazione Aziendale e autore -->                   
                     <div :class="listOfFeedback_under_zone">
-                        <span class="text-uppercase"><strong>{{element.author}}</strong></span>
-                        <span class="text-uppercase"><strong>{{element.role}}</strong></span>
+                        <span class="text-uppercase lofeed_title"><strong>{{element.author}}</strong></span>
+                        <span class="text-uppercase lofeed_role"><strong>{{element.role}}</strong></span>
                     </div>                    
                 </div>
             </div>
