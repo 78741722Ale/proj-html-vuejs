@@ -1,10 +1,9 @@
 <template>
-        <!--Aziende Partner goes here v (inserisci in modo dinamico) -->
-        <!-- Non ancora concluso - CO -->
-        <div class="container-fluid partner_site cont_cent">
-            <div class="row w-100 h-100 p-0 flex_cent">
+        <!--Aziende Partner  -->
+        <div :class="partner_cont">
+            <div :class="partner_row">
                 <!-- Loghi dinamici -->    
-                <div v-for="(element, index) in partners" :key="index" class="col-2 p-0 h-100 flex_cent">
+                <div v-for="(element, index) in partners" :key="index" :class="partner_loghi">
                     <img :src="(element.img)" :alt="element.name">
                 </div>                         
             </div>
@@ -14,6 +13,7 @@
 <script>
 export default {
     name:'AziendePartnerComponent',
+    /* Immagini dinamiche */
     data() {
         return {
             partners: [
@@ -47,7 +47,11 @@ export default {
                 img: require("@/assets/img/client-logo-7.png"),
                 name:"Electricity"
                 },
-            ]
+            ],
+            /* Classi Dinamiche */
+            partner_cont:"container-fluid partner_site cont_cent",
+            partner_row:"row w-100 h-100 p-0 flex_cent",
+            partner_loghi:"col-2 p-0 h-100 flex_cent"
         }
     },
 }
