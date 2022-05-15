@@ -43,15 +43,27 @@
     text-align: left;
 }
 .col-12 {
-    h2 {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 36px;
-        border-bottom: 2px solid black;  
-    }
     p {
         color: rgb(131, 130, 130);
     }
 }
+
+/* Classe relativa alla linea del titolo */
+.title_cloud {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 36px;
+        position: relative    
+}
+.title_cloud:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 30%;
+    border-bottom:2px solid black;
+}  
+
 .btn_contact {
     border-radius: 1.3rem;
     padding-left: 1.3rem;
@@ -66,10 +78,30 @@
 /*#endregion */
 
 
+/*#region Speciality services */
+
 /* Speciality services */
 .h_40 {
     height: 40%;
 }
+
+.title_specialty {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    position: relative    
+}
+.title_specialty:before {
+    content: "";
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    /* height: 1px; */
+    width: 35%;
+    border-bottom:2px solid black;
+}  
+
+
+
 .h_60 {
     height: 60%;
 }
@@ -82,6 +114,14 @@
 .product_service_card {
     background-color: $white-color;
 }
+
+
+/*#endregion */
+
+
+
+
+
 
 /* Our Communities */
 .col-5 {   

@@ -7,9 +7,9 @@
                 <!-- Descrizione delle specialità h-40 -->
                 <div class="col-6 h_40 flex_cent flex-column">
                     <!-- titolo -->
-                    <h2 class="pb-4">Specialty Services</h2>
+                    <h2 class="pb-3 title_specialty">Specialty Services</h2>
                     <!-- Paragrafo -->                   
-                    <p>
+                    <p class="pt-2 w-75">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos commodi totam autem, 
                         nesciunt deleniti dolorem eos reprehenderit consequatur excepturi ea?
                     </p>

@@ -7,7 +7,7 @@
                 <div class="col-6 h-100 flex_cent">
                     <div :class="LearnMore_col_12">
                         <!-- Title -->
-                        <h2 class="pb-3">Cloud Base Finance</h2>
+                        <h2 class="pb-3 title_cloud">Cloud Base Finance</h2>
                         <!-- Primo lorem -->
                         <p class="pt-2 pb-2">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
