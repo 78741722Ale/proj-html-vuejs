@@ -22,8 +22,12 @@
                         <div class="col-9 h_30 bordo flex_cent flex-column">
                             <!-- Logo (da font-awesome) -->
                             <div class="col-12 h_60">
-                                <!-- Prova effettuata ma non funzionante -->
-                                <font-awesome-icon icon="fa-solid fa-user-secret" />
+                                <!-- Prova effettuata correttamente -->
+                                <!-- 1° icons da aggiungere a oggetto <font-awesome-icon icon="fa-solid fa-globe" /> -->
+                                <!-- 2° icons da aggiungere a oggetto <font-awesome-icon icon="fa-solid fa-gem" /> --> 
+                                <!-- 3° icons da aggiungere a oggetto <font-awesome-icon icon="fa-solid fa-chart-line" /> -->                                                               
+
+                                <font-awesome-icon icon="fa-solid fa-chart-line" />
                             </div>
                             <!-- Nome prodotto -->                            
                             <div class="col-12 h_40 ">
