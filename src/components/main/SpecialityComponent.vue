@@ -21,7 +21,10 @@
                         <!-- Icona superiore e titolo --> 
                         <div class="col-9 h_30 bordo flex_cent flex-column">
                             <!-- Logo (da font-awesome) -->
-                            <div class="col-12 h_60"></div>
+                            <div class="col-12 h_60">
+                                <!-- Prova effettuata ma non funzionante -->
+                                <font-awesome-icon icon="fa-solid fa-user-secret" />
+                            </div>
                             <!-- Nome prodotto -->                            
                             <div class="col-12 h_40 ">
                                 <h3>Lorem ipsum</h3>
