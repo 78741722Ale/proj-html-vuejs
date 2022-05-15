@@ -77,7 +77,6 @@
 
 /*#endregion */
 
-
 /*#region Speciality services */
 
 /* Speciality services */
@@ -100,8 +99,6 @@
     border-bottom:2px solid black;
 }  
 
-
-
 .h_60 {
     height: 60%;
 }
@@ -114,6 +111,32 @@
 .product_service_card {
     background-color: $white-color;
 }
+/* Main title delle cards */
+.col-12 > h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+/* Testo lorem delle cards */
+.col-10 > span {
+    font-size: 0.9rem;
+    color:rgb(131, 130, 130);;
+}
+/* Aspetto icone */
+.big_icons {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1 / 1;
+    color: rgb(26, 69, 150);
+}
+/* Button learn more */
+.btn_services {
+    border-radius: 0 !important;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;   
+    background-color: $navbar-static-btn-bg;
+    border-color: $navbar-static-btn-bg;
+}
+
 
 
 /*#endregion */
@@ -150,7 +173,6 @@
 .bordo_feedback {
     border: 0.1px solid rgb(133, 130, 130);
 }
-
 .rtt_img {
     width: 100%;
     height: 100%;

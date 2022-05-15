@@ -17,16 +17,16 @@
                     <!-- Queste card sono dinamiche v-for --> 
                     <div v-for="(element, index) in cards_content" :class="specialty_single_card" :key="index">
                         <!-- Icona superiore e titolo --> 
-                        <div class="col-9 h_30 bordo flex_cent flex-column">
+                        <div class="col-9 h_30 flex_cent flex-column">
                             <!-- Logo (da font-awesome) -->
-                            <div class="col-12 h_60"><font-awesome-icon :icon="element.icon" /></div>
+                            <div :class="scard_icon"><font-awesome-icon class="big_icons" :icon="element.icon" /></div>
                             <!-- Nome prodotto -->                            
-                            <div class="col-12 h_40 "><h3>{{element.title}}</h3></div>
+                            <div :class="scard_title"><h5 class="pt-4">{{element.title}}</h5></div>
                         </div>
                         <!-- lorem ipsum --> 
-                        <div class="h_60 col-10 bordo flex_cent"><span>{{element.text}}</span></div>
+                        <div :class="scard_text"><span>{{element.text}}</span></div>
                         <!-- Bottone learn more -->                    
-                        <div class="h_10 w-100 flex_cent"><button class="btn btn-primary w-100">{{element.about}}</button></div>
+                        <div class="h_10 w-100 flex_cent"><button :class="scard_button">{{element.about}}</button></div>
                     </div>
                 </div>
             </div>           
@@ -45,7 +45,12 @@ export default {
             specialty_desc: "col-6 h_40 flex_cent flex-column",
             /* Classi dinamiche - Cards */
             specialty_cards_cont:"col-8 gap-5 h_60 d-flex justify-content-center align-items-start p-0",
-            specialty_single_card:"col-3 product_service_card h-75 flex_cent flex-column" ,       
+            specialty_single_card:"col-3 product_service_card h-75 flex_cent flex-column", 
+            /* Classi dinamiche - Singola card */  
+            scard_title: "col-12 h_40",
+            scard_text: "h_60 col-10 pt-4",   
+            scard_icon: "col-12 h_60 pt-4", 
+            scard_button: "btn btn-primary w-100 btn_services",
             /* Array di oggetto per dinamicità cards */
             cards_content: [
                 /* Prima card - Small Business Loans */
