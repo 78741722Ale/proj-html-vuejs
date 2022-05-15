@@ -3,37 +3,53 @@
         <!-- Non ancora concluso - CO -->
         <div class="container-fluid partner_site cont_cent">
             <div class="row w-100 h-100 p-0 flex_cent">
-                <!-- 1° logo - Electricity -->
-                <div class="col-2 p-0 h-100 flex_cent">
-                    <img src="@/assets/img/client-logo-7.png" alt="Electricity">
-                </div>
-                <!-- 2° logo - Event Elevate -->
-                <div class="col-2 p-0 h-100 flex_cent">
-                    <img src="@/assets/img/client-logo-8.png" alt="Event Elevate">
-                </div>
-                <!-- 3° logo - Bonjour -->
-                <div class="col-2 p-0 h-100 flex_cent">
-                    <img src="@/assets/img/client-logo-9.png" alt="Bonjour">
-                </div>
-                <!-- 4° logo - Bridge -->
-                <div class="col-2 p-0 h-100 flex_cent">
-                    <img src="@/assets/img/client-logo-5.png" alt="Bridge">
-                </div>
-                <!-- 5° logo - Guardian -->
-                <div class="col-2 p-0 h-100 flex_cent">
-                    <img src="@/assets/img/client-logo-6.png" alt="Guardian">
-                </div> 
-                <!-- 6° logo - Electricity -->
-                <div class="col-2 p-0 h-100 flex_cent">
-                    <img src="@/assets/img/client-logo-7.png" alt="Electricity">
-                </div>                      
+                <!-- Loghi dinamici -->    
+                <div v-for="(element, index) in partners" :key="index" class="col-2 p-0 h-100 flex_cent">
+                    <img :src="(element.img)" :alt="element.name">
+                </div>                         
             </div>
         </div>
 </template>
 
 <script>
 export default {
-    name:'AziendePartnerComponent'
+    name:'AziendePartnerComponent',
+    data() {
+        return {
+            partners: [
+                /* Electricity */
+                {
+                img: require("@/assets/img/client-logo-7.png"),
+                name:"Electricity"
+                },
+                /* Event Elevate */
+                {
+                img: require("@/assets/img/client-logo-8.png"),
+                name:"Event Elevate"
+                },
+                /* Bonjour */
+                {
+                img: require("@/assets/img/client-logo-9.png"),
+                name:"Bonjour"
+                },
+                /* Bridge */
+                {
+                img: require("@/assets/img/client-logo-5.png"),
+                name:"Bridge"
+                },
+                /* Guardian */
+                {
+                img: require("@/assets/img/client-logo-6.png"),
+                name:"Guardian"
+                },
+                /* Electricity */
+                {
+                img: require("@/assets/img/client-logo-7.png"),
+                name:"Electricity"
+                },
+            ]
+        }
+    },
 }
 </script>
 
