@@ -11,16 +11,13 @@ import "@fontsource/josefin-sans/400.css"
 import "@fontsource/josefin-sans/700.css"
 /* Import di Font Awesome */
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter, faFacebook, faYoutube, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe, faGem, faChartLine, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* add icons to the library */
-library.add(faTwitter, faGlobe, faGem, faChartLine, faChevronRight)
+library.add(faTwitter, faGlobe, faGem, faChartLine, faChevronRight, faFacebook, faYoutube, faInstagram)
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
-
-
-
 
 Vue.config.productionTip = false
 7

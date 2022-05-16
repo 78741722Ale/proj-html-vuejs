@@ -5,17 +5,18 @@
     background-color: $upperfooter-bg-color;
     color: $white-color;
 }
-
 .under_footer {
     width: 100%;
     height: 90px;
-    background-color: $Dusty-gray-color;
+    background-color: $underfooter-bg-color;
+    color: $underfooter-copy-color;
+    font-size: 0.9rem;
 }
 /*#endregion */
 
 /*#region Logo del footer */
 .logo_footer {
-    width: 45%;
+    width: 38%;
 }
 /*#endregion */
 
@@ -58,3 +59,21 @@
     color: cornflowerblue;
 }
 /*#endregion  */
+
+/*#region Icons brands */
+.list_brands {
+    list-style: none;
+    /* List Item */
+    a {
+        color: inherit;
+        text-decoration: none;
+        padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+        font-size: 1.1rem;
+        background-color: $underfooter-icons-bg-color;
+        color: $underfooter-icons-color;
+        border-radius: 100%
+    }
+}
+
+
+/*#endregion */
