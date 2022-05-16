@@ -1,8 +1,8 @@
 <template>
     <!-- Upper footer goes here v -->
-    <div class="container-fluid upper_footer cont_cent">
+    <div :class="upper_cont">
         <!-- Components -->
-        <div class="row w-100 h-100 p-0 flex_cent">
+        <div :class="upper_row">
             <!-- Logo Del Footer -->
             <LogoFooter />
             <!-- Recent Posts -->
@@ -31,7 +31,14 @@ export default {
         RecentPostsFooter,
         ServiceFooter,
         LatestFooter
-    }
+    },
+    data() {
+        return {
+        /* Classi dinamiche */
+        upper_cont: "container-fluid upper_footer cont_cent",
+        upper_row:"row w-100 h-100 p-0 flex_cent",
+        }
+    },
 }
 </script>
 
