@@ -1,13 +1,21 @@
 <template>
     <!-- Logo Navbar -->
-    <div class="col-3 ps-2 h-100 d-flex justify-content-start align-items-center">
-        <img src="@/assets/img/finance_logo_1x.png" alt="Logo Aziendale">
+    <div :class="Logo_cont">
+        <img :src="Logo_img" :alt="Logo_title">
     </div>
 </template>
 
 <script>
 export default {
-    name: 'LogoComponent'
+    name: 'LogoComponent',
+    /* Contenuto Dinamico */
+    data() {
+        return {
+            Logo_cont:"col-3 ps-5 h-100 d-flex justify-content-start align-items-center",
+            Logo_img: require("@/assets/img/finance_logo_1x.png"),
+            Logo_title:"Avada Finance"
+        }
+    },
 }
 </script>
 

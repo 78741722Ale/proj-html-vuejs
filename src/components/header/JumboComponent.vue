@@ -2,7 +2,7 @@
     <!-- Jumbotron Image -->
     <div :class="jumbo_cont">
         <!-- Jumbotron Image -->        
-        <img src="@/assets/img/home_finance_slider_bg.jpg" alt="Jumbotron">
+        <img :src="jumbo_img" :alt="jumbo_Desc">
         <!-- Jumbotron Title -->
         <h1 class="jumbo_title w-100">Rigth People. Rigth Investments.</h1>
     </div>
@@ -14,7 +14,9 @@ export default {
     data() {
         return {
             /* Classe dinamica del jumbotron */
-            jumbo_cont: "container-fluid jumbotron_site p-0"
+            jumbo_cont: "container-fluid jumbotron_site p-0",
+            jumbo_img: require("@/assets/img/home_finance_slider_bg.jpg"),
+            jumbo_Desc:"Jumbotron Image"
         }
     },
 }

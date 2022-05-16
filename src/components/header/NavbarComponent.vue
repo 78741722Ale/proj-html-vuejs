@@ -1,12 +1,11 @@
 <template>
-  <div class="col-6 h-100 gap-4 d-flex justify-content-end align-items-center">
-    <!-- Genera in modo dinamico -->
-    <ul class="navbar_list gap-4 h-100">
-      <!-- Componente dinamico -->
+  <div :class="navbar_cont">
+    <!-- Componenti dinamici -->
+    <ul :class="ul_class">
       <li v-for="(element, index) in navbar_services" :key="index"><a :href="element.ref">{{element.type}}</a></li>        
     </ul>
-    <!-- Button (da sistemare) -->
-    <button class="btn btn-primary btn_contact">Contact</button>
+    <!-- Button -->
+    <button class="btn btn-primary btn_contact">{{btn_text}}</button>
   </div>
 </template>
 
@@ -16,6 +15,9 @@ export default {
     /* Componenti lista non ordinata  */
     data() {
       return {
+        navbar_cont:"col-6 h-100 gap-4 d-flex justify-content-end align-items-center",
+        ul_class:"navbar_list gap-4 h-100",
+        btn_text:"Contact",
         navbar_services: [
           /* Home  */
           {
