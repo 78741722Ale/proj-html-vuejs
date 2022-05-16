@@ -181,8 +181,6 @@
     color: rgb(168, 164, 164);
 }
 
-
-
 /*#endregion */
 
 /*#region Our Communities */
@@ -234,12 +232,35 @@
 }
 /*#endregion */
 
-
-
-
-
+/*#region Call To Action */
 .rtt_img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+/* Classe totale dei data in CTA */
+.CTA_data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Descrizione */
+    span {
+        color: rgb(168, 164, 164);
+        font-size: 1.1rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    /* Titolo */
+    h2 {
+        color: $white-color;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 52px;
+    }
+    .btn {
+        font-size: 1rem !important;
+    }
+}
+
+
+/*#endregion */
