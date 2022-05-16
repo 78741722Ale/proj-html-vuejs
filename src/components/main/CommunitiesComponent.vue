@@ -1,41 +1,28 @@
 <template>
-        <!-- Our Communities goes here v - CO  -->
-        <!-- Non ancora concluso (valuta uso dinamico) -->         
-        <div class="container-fluid communities cont_cent ">
-            <div class="row w-100 p-0 h-100 flex_cent">
-                <!-- Call to action -->
+        <!-- Our Communities goes here v - CO  -->       
+        <div :class="Comm_cont">
+            <div :class="Comm_row">
+                <!-- Communities image -->
                 <div class="col-5 p-0 h-100">
-                    <img src="@/assets/img/counters-bg-image.jpg" alt="Call to action">
+                    <img :src="Comm_image" :alt="Comm_desc">
                 </div>
+                <!-- Qui classe in absolute per i dati nell'immagine -->
                 <!-- Percentuali (dinamiche) -->
-                <div class="col-7 p-0 h-100 flex_cent flex-column com_numbers">
+                <div :class="Percentuali">
                     <!-- Percentuali Sopra --> 
-                    <!-- Andrebbero fatte dinamiche tramite array di oggetto  -->
-                    <div class="col-8 h-25 flex_bet">
-                        <!-- Sinistra -->
-                        <!-- Queste col - 4 valuta di farle dinamiche in v-for con array di oggetto -->
-                        <div class="col-4 p-0 h-100 flex_cent flex-column">
-                            <h1 class="mb-0">86%</h1>
-                            <span>Successful Applications</span>
-                        </div>
-                        <!-- Destra -->
-                        <div class="col-4 h-100 flex_cent flex-column">
-                            <h1 class="mb-0">94%</h1>
-                            <span>Return of Investment</span>                            
+                    <div :class="Comm_perc_cols">
+                        <!-- Numeri della comunità, superiori-->
+                        <div v-for="(element, index) in perc_up" :key="index" :class="Comm_single_cell">
+                            <h1 class="mb-0">{{element.dato}}</h1>
+                            <span>{{element.desc}}</span>
                         </div>
                     </div>
                     <!-- Percentuali Sotto -->
-                    <div class="col-8 h-25 flex_bet">
-                        <!-- Sinistra -->
-                        <!-- Queste col - 4 valuta di farle dinamiche in v-for con array di oggetto -->
-                        <div class="col-4 p-0 h-100 flex_cent flex-column">
-                            <h1 class="mb-0">92%</h1>
-                            <span>Applied Solution</span>
-                        </div>
-                        <!-- Destra -->
-                        <div class="col-4 h-100 flex_cent flex-column">
-                            <h1 class="mb-0">100%</h1>
-                            <span>Completely Secure</span>                            
+                    <div :class="Comm_perc_cols">
+                        <!-- Numeri della comunità, superiori-->
+                        <div v-for="(element, index) in perc_down" :key="index" :class="Comm_single_cell">
+                            <h1 class="mb-0">{{element.dato}}</h1>
+                            <span>{{element.desc}}</span>
                         </div>
                     </div>
                 </div>
@@ -45,7 +32,45 @@
 
 <script>
 export default {
-    name:'CommunitiesComponent'
+    name:'CommunitiesComponent',
+    data() {
+        return {
+            /* Classi Dinamiche, container e row */
+            Comm_cont:"container-fluid communities cont_cent",
+            Comm_row:"row w-100 p-0 h-100 flex_cent",            
+            /* Classi Dinamiche - Immagine call to action */
+            Comm_image : require("@/assets/img/counters-bg-image.jpg"),
+            Comm_desc: "counters-bg-image",
+            Percentuali : "col-7 p-0 h-100 flex_cent flex-column com_numbers",
+            Comm_perc_cols: "col-8 h-25 flex_bet", /* Sono uguali le due col, sopra e sotto hanno la stessa tipologia di classi */
+            Comm_single_cell : "col-4 p-0 h-100 flex_cent flex-column",
+            /* Dati dinamici, sopra */
+            perc_up : [
+                /* Succesful Applications */
+                {
+                    dato:"86%",
+                    desc:"Succesful Applications"
+                },
+                /* Return Of Investment */
+                {
+                    dato:"94%",
+                    desc:"Return Of Investment"
+                },                
+            ],
+            perc_down : [
+                /* Applied Solution */
+                {
+                    dato:"92%",
+                    desc:"Applied Solution"
+                },
+                /* Completely Secure */
+                {
+                    dato:"100%",
+                    desc:"Completely Secure"
+                },                
+            ]
+        }
+    },
 }
 </script>
 
