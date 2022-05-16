@@ -17,10 +17,22 @@
 .logo_footer {
     width: 45%;
 }
+/*#endregion */
 
+/*#region Recent Post */
+.foot_lists {
+    list-style: none;
+    line-height: 2.5rem;
+    text-align: left;
+    font-size: 0.85rem;
+    li {
+        color: $upperfooter-list-color;
+    }
+}
 
-
-
+.rec_title {
+    font-family: 'Times New Roman', Times, serif;
+}
 
 
 
@@ -29,11 +41,4 @@
 
 
 
-.foot_lists {
-    list-style: none;
-    line-height: 2.5rem;
-    li {
-        color: $upperfooter-list-color;
-    }
-}
 
