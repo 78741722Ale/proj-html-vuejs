@@ -2,7 +2,7 @@
     <!-- Avada Finance logo -->
     <!-- Aggiunta modifica tramite props -->
     <div :class="flogo_col">
-        <img class="logo_footer ms-5 pt-5"  :src="img" :desc="desc">
+        <img class="logo_footer ms-5 pt-5"  :src="src" :alt="desc">
     </div> 
 </template>
 
@@ -18,9 +18,12 @@ export default {
     },
     /* Props per upperfooter */
     props: {
-        /* Tipologia */
-        img: String,
-        desc: String
+        /* Tipologia 
+        src : search
+        alt : nominativo in caso di assenza
+        */
+        src: String,
+        alt: String
     }
 }
 </script>

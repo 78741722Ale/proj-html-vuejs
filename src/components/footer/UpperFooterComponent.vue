@@ -7,8 +7,8 @@
             <LogoFooter 
             v-for="(element, index) in footer_logo_elements"
             :key="index"
-            :img="element.img"
-            :desc= "element.desc"
+            :src="element.img"
+            :alt= "element.desc"
             />
             <!-- Recent Posts -->
             <RecentPostsFooter />
