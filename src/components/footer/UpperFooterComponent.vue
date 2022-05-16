@@ -4,7 +4,12 @@
         <!-- Components -->
         <div :class="upper_row">
             <!-- Logo Del Footer -->
-            <LogoFooter />
+            <LogoFooter 
+            v-for="(element, index) in footer_logo_elements"
+            :key="index"
+            :img="element.img"
+            :desc= "element.desc"
+            />
             <!-- Recent Posts -->
             <RecentPostsFooter />
             <!-- Services -->
@@ -37,8 +42,16 @@ export default {
         /* Classi dinamiche */
         upper_cont: "container-fluid upper_footer cont_cent",
         upper_row:"row w-100 h-100 p-0 flex_cent",
+        /* Elemento dinamico di LogoFooter.vue */
+        footer_logo_elements: [
+                {
+                img: require("@/assets/img/finance_logo_footer.png"),
+                desc: "Avada Finance Logo"
+                }
+            ],    
         }
     },
+ 
 }
 </script>
 
