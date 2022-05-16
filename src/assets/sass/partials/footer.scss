@@ -29,16 +29,32 @@
         color: $upperfooter-list-color;
     }
 }
-
 .rec_title {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/*#endregion */
+
+/*#region Services */
+.serv_title {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.serv_lists {
+    list-style: none;
+    line-height: 2.5rem;
+    text-align: left;
+    font-size: 0.85rem;
+    li {
+        color: $upperfooter-list-color;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
 
 
 /*#endregion */
-
-
-
-
 
