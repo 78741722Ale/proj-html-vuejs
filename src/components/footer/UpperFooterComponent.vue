@@ -1,41 +1,37 @@
 <template>
-        <!-- Upper footer goes here v -->
-        <div class="container-fluid upper_footer cont_cent">
-           <div class="row w-100 h-100 p-0 flex_cent">
-               <!-- Avada Finance - Larghezza da sistemare -->
-               <div class="col-3 flex_cent h-100">
-                   <img src="@/assets/img/finance_logo_footer.png" alt="Avada Finance Logo" srcset="">
-               </div>
-               <!-- Recent Posts -->
-               <div class="col-3 ps-3 d-flex justify-content-center align-items-start flex-column p-0 h-100 bordo">
-                   <span class="pb-2"><strong class="text-uppercase">Recent post</strong></span>
-                   <!-- Lista di Recent Post -->
-                   <ul class="foot_lists ps-0">
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                   </ul>
-               </div>
-               <!-- Services -->
-               <div class="col-3 ps-3 d-flex justify-content-center align-items-start flex-column p-0 h-100 bordo">
-                   <span class="pb-2"><strong class="text-uppercase">Services</strong></span>
-                   <!-- Lista di Recent Post -->
-                   <ul class="foot_lists ps-0">
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                   </ul>                   
-               </div>
-               <!-- Latest -->
-               <!-- Da concludere graficamente con icone -->               
-               <div class="col-3 flex_cent h-100 bordo">Latest</div>
-           </div>
+    <!-- Upper footer goes here v -->
+    <div class="container-fluid upper_footer cont_cent">
+        <!-- Components -->
+        <div class="row w-100 h-100 p-0 flex_cent">
+            <!-- Logo Del Footer -->
+            <LogoFooter />
+            <!-- Recent Posts -->
+            <RecentPostsFooter />
+            <!-- Services -->
+            <ServiceFooter />
+            <!-- Latest -->
+            <LatestFooter />
         </div>
+    </div>
 </template>
 
 <script>
+/* Import dei componenti, zona Upper Footer */
+import LogoFooter from '@/components/footer/LogoFooter.vue'
+import RecentPostsFooter from '@/components/footer/RecentPostsFooter.vue'
+import ServiceFooter from '@/components/footer/ServiceFooter.vue'
+import LatestFooter from '@/components/footer/LatestFooter.vue'
+
+
 export default {
-    name:"UpperFooterComponent"
+    name:"UpperFooterComponent",
+    /* Components */
+    components : {
+        LogoFooter,
+        RecentPostsFooter,
+        ServiceFooter,
+        LatestFooter
+    }
 }
 </script>
 
