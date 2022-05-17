@@ -7,7 +7,13 @@
             <!-- Partner Icons -->
             <div class="col-2 h-100 flex_cent">
                 <ul :class="list_class">
-                    <li v-for="(element, index) in icons_brand" :key="index"><a :href="element.ref"><font-awesome-icon :icon="element.icon" /></a></li>
+                <!-- Questo è il list item che si cicla x volte -->
+                <BrandsFooter 
+                v-for="(element, index) in icons_brand" 
+                :key="index"
+                :icon = "element.icon"
+                :rif= "element.ref"
+                /> 
                 </ul>
             </div>
         </div>
@@ -15,8 +21,15 @@
 </template>
 
 <script>
+/* Import dei componenti, zona Underr Footer */
+import BrandsFooter from '@/components/footer/BrandsFooter.vue'
+
 export default {
     name:"UnderFooterComponent",
+    /* Componente per i brands */
+    components : {
+        BrandsFooter,
+    },
     data() {
         return {
             /* Classi Dinamiche - Copy */
