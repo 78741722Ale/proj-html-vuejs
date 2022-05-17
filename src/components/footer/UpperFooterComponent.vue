@@ -11,7 +11,23 @@
             :alt= "element.desc"
             />
             <!-- Recent Posts -->
-            <RecentPostsFooter />
+            <div class="col-3 ps-3 pt-3 d-flex justify-content-center align-items-start flex-column p-0 h-100">
+                <!-- Titolo -->
+                <span class="pb-2"><strong class="text-uppercase rec_title">RecentPostsFooter</strong></span>
+                <!-- Lista di Recent Post -->
+                <ul class="foot_lists ps-0">
+                <RecentPostsFooter 
+                    v-for="(element, index) in rec_post_elements" 
+                    :key="index"
+                    :icon="element.icon"
+                    :text="element.text"
+                    />
+                </ul>
+            </div>    
+            
+            
+            
+            
             <!-- Services -->
             <ServiceFooter />
             <!-- Latest -->
@@ -48,7 +64,25 @@ export default {
                 img: require("@/assets/img/finance_logo_footer.png"),
                 desc: "Avada Finance Logo"
                 }
-            ],    
+            ], 
+        rec_post_elements : [
+                /* When is it.. */
+                {
+                    icon : "fa-solid fa-chevron-right",
+                    text : "When is it the right time to sell your company?"
+                },
+                /* Personal debt.. */
+                {
+                    icon : "fa-solid fa-chevron-right",
+                    text : "Personal debt or company debt we explore your options"
+                }, 
+                /* An Interview.. */
+                {
+                    icon : "fa-solid fa-chevron-right",
+                    text : "An Interview with a so-called business angel"
+                },                               
+
+            ]   
         }
     },
  
