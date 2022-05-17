@@ -16,8 +16,8 @@ export default {
     },
     props : {
         /* Tipologia 
-        src : search => img
-        alt : nominativo in caso di assenza => desc
+            src : search => img
+            alt : nominativo in caso di assenza => desc
         */
         src: String,
         alt: String        

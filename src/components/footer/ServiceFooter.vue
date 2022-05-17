@@ -6,7 +6,7 @@
 <script>
 export default {
     name:"ServiceFooter",
-    /* Props da passare al genitore */
+    /* Props da passare ad upper footer*/
     props : {
     /* Struttura dati 
     icon = element.icon

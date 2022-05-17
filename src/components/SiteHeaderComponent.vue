@@ -1,11 +1,9 @@
 <template>
     <!-- /#site_header -->  
     <div id="site_header">
-        <!-- navbar goes here v -->
-        <!-- Da sistemare -->
         <div :class="nav_cont">
             <div :class="nav_row">
-                <!-- Logo Avada -->
+                <!-- Logo Sito -->
                 <LogoComponent 
                 v-for="(element, index) in header_logo_component"
                 :key="index"
@@ -51,7 +49,7 @@ export default {
             /* Classi Dinamiche - Navbar */
             nav_cont: "container-fluid d-flex justify-content-center navbar_site p-0",
             nav_row: "row d-flex justify-content-between align-content-center w-100 h-100 p-0", 
-            /* Contenuto dinamico dell'header */
+            /* Contenuto dinamico dell'Logo Header */
             header_logo_component : [
                 {
                     img: require("@/assets/img/finance_logo_1x.png"),
@@ -59,11 +57,11 @@ export default {
                 }
             ],
             /* Contenuto dinamico della navbar */
-            /* Classi */
+            /* Classi dinamiche */
             navbar_cont:"col-6 h-100 gap-4 d-flex justify-content-end align-items-center",
             ul_class:"navbar_list gap-4 h-100",      
             btn_text:"Contact",
-            /* Array di oggetto */
+            /* Array di oggetti */
             navbar_services: [
             /* Home  */
             {

@@ -1,5 +1,5 @@
 <template>
-    <!-- Under footer goes here v -->
+    <!-- Under footer -->
     <div :class="under_cont">
         <div :class="under_row">    
             <!-- CopyRight Text -->
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-/* Import dei componenti, zona Underr Footer */
+/* Import dei componenti, zona Under Footer */
 import BrandsFooter from '@/components/footer/BrandsFooter.vue'
 
 export default {
@@ -38,6 +38,7 @@ export default {
             copy_text : "CopyRight 2022 | Alessandro Pecorilla | All Rights Reserved | Powered by Vue 2.0",
             /* Classi Dinamiche - Lista */
             list_class : "list_brands gap-3 p-0 mb-0 d-flex flex-row",
+            /* Contenuto Dinamico, array di oggetti */
             icons_brand : [
                 /* Facebook */
                 {

@@ -8,8 +8,8 @@ export default {
     name: 'NavbarComponent',
     props : {
       /* Struttura Dati 
-      rif => element.ref
-      type => element.type
+        rif => element.ref
+        type => element.type
       */
       rif: String,
       type: String

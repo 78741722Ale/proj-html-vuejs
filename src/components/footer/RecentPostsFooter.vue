@@ -1,5 +1,5 @@
 <template>
-    <!-- Componente List Item da ripeter -->
+    <!-- Componente List Item da ripetere -->
     <li><font-awesome-icon class="pe-1" :icon="icon" />{{text}}</li>
 </template>
 

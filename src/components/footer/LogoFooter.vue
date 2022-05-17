@@ -1,6 +1,5 @@
 <template>
     <!-- Avada Finance logo -->
-    <!-- Aggiunta modifica tramite props -->
     <div :class="flogo_col">
         <img class="logo_footer ms-5 pt-5"  :src="src" :alt="desc">
     </div> 

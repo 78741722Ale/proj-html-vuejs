@@ -1,5 +1,5 @@
 <template>
-    <!-- Jumbotron Image -->
+    <!-- Jumbotron Container -->
     <div :class="jumbo_cont">
         <!-- Jumbotron Image -->        
         <img :src="jumbo_img" :alt="jumbo_Desc">

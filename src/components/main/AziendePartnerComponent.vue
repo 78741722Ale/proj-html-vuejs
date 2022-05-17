@@ -16,6 +16,7 @@ export default {
     /* Immagini dinamiche */
     data() {
         return {
+            /* Array di oggetto */
             partners: [
                 /* Electricity */
                 {
