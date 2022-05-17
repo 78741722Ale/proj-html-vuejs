@@ -13,7 +13,6 @@ export default {
         return {
             /* Classe dinamica */
             flogo_col:"col-3 d-flex justify-content-start align-items-start h-100",
-
         }
     },
     /* Props per upperfooter */

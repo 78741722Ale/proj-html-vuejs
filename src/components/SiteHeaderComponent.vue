@@ -6,7 +6,12 @@
         <div :class="nav_cont">
             <div :class="nav_row">
                 <!-- Logo Avada -->
-                <LogoComponent />
+                <LogoComponent 
+                v-for="(element, index) in header_logo_component"
+                :key="index"
+                :src="element.img"
+                :alt= "element.desc"
+                />
                 <!-- Navbar -->
                 <NavbarComponent />
             </div>
@@ -35,7 +40,14 @@ export default {
         return {
             /* Classi Dinamiche - Navbar */
             nav_cont: "container-fluid d-flex justify-content-center navbar_site p-0",
-            nav_row: "row d-flex justify-content-between align-content-center w-100 h-100 p-0",     
+            nav_row: "row d-flex justify-content-between align-content-center w-100 h-100 p-0", 
+            /* Contenuto dinamico dell'header */
+            header_logo_component : [
+                {
+                    img: require("@/assets/img/finance_logo_1x.png"),
+                    desc:"Avada Finance"
+                }
+            ]    
         }
     },
 }
