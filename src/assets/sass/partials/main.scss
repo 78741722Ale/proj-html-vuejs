@@ -36,6 +36,12 @@
 }
 /*#endregion */
 
+/*#region Loghi Aziendali */
+.loghi_partner {
+    width: 70%;
+}
+/*#endregion */
+
 /*#region Cloud Base Finance*/
 /* Cloud Base Finance */
 .cloud_desc {
@@ -44,6 +50,7 @@
 .col-12 {
     p {
         color: rgb(131, 130, 130);
+        font-weight: 300;
     }
 }
 
@@ -72,6 +79,7 @@
     background-color: $navbar-static-btn-bg;
     border-color: $navbar-static-btn-bg;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 /*#endregion */

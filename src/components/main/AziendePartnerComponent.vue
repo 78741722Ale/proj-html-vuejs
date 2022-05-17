@@ -4,7 +4,7 @@
             <div :class="partner_row">
                 <!-- Loghi dinamici -->    
                 <div v-for="(element, index) in partners" :key="index" :class="partner_loghi">
-                    <img :src="(element.img)" :alt="element.name">
+                    <img class="loghi_partner" :src="(element.img)" :alt="element.name">
                 </div>                         
             </div>
         </div>

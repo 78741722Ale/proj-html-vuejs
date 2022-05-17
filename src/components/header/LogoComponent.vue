@@ -1,7 +1,7 @@
 <template>
     <!-- Logo Navbar -->
     <div :class="Logo_cont">
-        <img :src="Logo_img" :alt="Logo_title">
+        <img class="logo_head" :src="Logo_img" :alt="Logo_title">
     </div>
 </template>
 
