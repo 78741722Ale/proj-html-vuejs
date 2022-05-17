@@ -12,12 +12,23 @@
                 :src="element.img"
                 :alt= "element.desc"
                 />
-                <!-- Navbar -->
-                <NavbarComponent />
+                <!-- Navbar - Props -->
+                <div :class="navbar_cont">
+                    <ul :class="ul_class">
+                        <!-- Questo è un list item -->
+                        <NavbarComponent 
+                        v-for="(element, index) in navbar_services" 
+                        :key="index"
+                        :rif="element.ref"
+                        :type="element.type"
+                        />    
+                    </ul>
+                    <!-- Button -->
+                    <button class="btn btn-primary btn_contact">{{btn_text}}</button>
+                </div>   
             </div>
         </div>
-        <!--Jumbotron -->
-        <!-- Da sistemare -->        
+        <!--Jumbotron -->      
         <JumboComponent />
     </div>
 </template>
@@ -35,7 +46,6 @@ export default {
         NavbarComponent,
         JumboComponent
     },
-    
     data() {
         return {
             /* Classi Dinamiche - Navbar */
@@ -47,7 +57,40 @@ export default {
                     img: require("@/assets/img/finance_logo_1x.png"),
                     desc:"Avada Finance"
                 }
-            ]    
+            ],
+            /* Contenuto dinamico della navbar */
+            /* Classi */
+            navbar_cont:"col-6 h-100 gap-4 d-flex justify-content-end align-items-center",
+            ul_class:"navbar_list gap-4 h-100",      
+            btn_text:"Contact",
+            /* Array di oggetto */
+            navbar_services: [
+            /* Home  */
+            {
+            type: "Home",
+            ref: "Home"
+            },
+             /* About  */
+            {
+            type: "About",
+            ref: "About"
+            },
+            /* Services  */
+            {
+            type: "Services",
+            ref: "Services"
+            },
+            /* Packages  */
+            {
+            type: "Packages",
+            ref: "Packages"
+            },
+            /* Insight  */
+            {
+            type: "Insight",
+            ref: "Insight"
+            },                    
+            ],
         }
     },
 }

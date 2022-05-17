@@ -1,52 +1,19 @@
 <template>
-  <div :class="navbar_cont">
     <!-- Componenti dinamici -->
-    <ul :class="ul_class">
-      <li v-for="(element, index) in navbar_services" :key="index"><a :href="element.ref">{{element.type}}</a></li>        
-    </ul>
-    <!-- Button -->
-    <button class="btn btn-primary btn_contact">{{btn_text}}</button>
-  </div>
+    <li ><a :href="rif">{{type}}</a></li>        
 </template>
 
 <script>
 export default {
     name: 'NavbarComponent',
-    /* Componenti lista non ordinata  */
-    data() {
-      return {
-        navbar_cont:"col-6 h-100 gap-4 d-flex justify-content-end align-items-center",
-        ul_class:"navbar_list gap-4 h-100",
-        btn_text:"Contact",
-        navbar_services: [
-          /* Home  */
-          {
-            type: "Home",
-            ref: "Home"
-          },
-          /* About  */
-          {
-            type: "About",
-            ref: "About"
-          },
-          /* Services  */
-          {
-            type: "Services",
-            ref: "Services"
-          },
-          /* Packages  */
-          {
-            type: "Packages",
-            ref: "Packages"
-          },
-          /* Insight  */
-          {
-            type: "Insight",
-            ref: "Insight"
-          },                    
-        ]
-      }
-    },
+    props : {
+      /* Struttura Dati 
+      rif => element.ref
+      type => element.type
+      */
+      rif: String,
+      type: String
+    }
 }
 </script>
 
