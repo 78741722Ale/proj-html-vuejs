@@ -56,9 +56,9 @@
 
 /* Classe relativa alla linea del titolo */
 .title_cloud {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 36px;
-        position: relative    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    position: relative    
 }
 .title_cloud:before {
     content: "";
@@ -79,7 +79,7 @@
     background-color: $navbar-static-btn-bg;
     border-color: $navbar-static-btn-bg;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 /*#endregion */
@@ -93,7 +93,7 @@
 
 .title_specialty {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 36px;
+    font-size: 42px;
     position: relative    
 }
 .title_specialty:before {
@@ -105,6 +105,17 @@
     width: 35%;
     border-bottom:2px solid black;
 }  
+
+.para_specialty {
+    color: rgb(131, 130, 130);
+}
+
+.span_specialty_card {
+    font-size: 1.3rem;
+    color: rgb(131, 130, 130);
+}
+
+
 
 .h_60 {
     height: 60%;
@@ -176,7 +187,7 @@
 
 .lofeed_text {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .lofeed_title {
@@ -187,7 +198,6 @@
     font-size: 0.8rem;
     color: rgb(168, 164, 164);
 }
-
 /*#endregion */
 
 /*#region Our Communities */
@@ -203,6 +213,8 @@
     /* titolo delle percentuali our communities */
     h1 {
         color: $our-common-title-color;
+        font-size: 56px;
+        font-weight: bold;
     }
     /* Descrizione delle percentuali */
     span {
@@ -255,7 +267,7 @@
     /* Descrizione */
     span {
         color: rgb(168, 164, 164);
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         font-family: 'Times New Roman', Times, serif;
     }
     /* Titolo */
@@ -265,7 +277,7 @@
         font-size: 52px;
     }
     .btn {
-        font-size: 1rem !important;
+        font-size: 0.8rem !important;
     }
 }
 

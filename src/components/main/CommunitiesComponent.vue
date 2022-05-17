@@ -20,7 +20,7 @@
                     <!-- Percentuali Sopra --> 
                     <div :class="Comm_perc_cols">
                         <!-- Numeri della comunità, superiori-->
-                        <div v-for="(element, index) in perc_up" :key="index" :class="Comm_single_cell">
+                        <div v-for="(element, index) in perc_up" :key="index" :class="Comm_single_cell_up">
                             <h1 class="mb-0">{{element.dato}}</h1>
                             <span>{{element.desc}}</span>
                         </div>
@@ -28,7 +28,7 @@
                     <!-- Percentuali Sotto -->
                     <div :class="Comm_perc_cols">
                         <!-- Numeri della comunità, superiori-->
-                        <div v-for="(element, index) in perc_down" :key="index" :class="Comm_single_cell">
+                        <div v-for="(element, index) in perc_down" :key="index" :class="Comm_single_cell_down">
                             <h1 class="mb-0">{{element.dato}}</h1>
                             <span>{{element.desc}}</span>
                         </div>
@@ -50,8 +50,9 @@ export default {
             Comm_image : require("@/assets/img/counters-bg-image.jpg"),
             Comm_desc: "counters-bg-image",
             Percentuali : "col-8 p-0 h-100 flex_cent flex-column com_numbers",
-            Comm_perc_cols: "col-8 h-25 flex_bet", /* Sono uguali le due col, sopra e sotto hanno la stessa tipologia di classi */
-            Comm_single_cell : "col-4 p-0 h-100 flex_cent flex-column",
+            Comm_perc_cols: "col-8 h-50 justify-content-between d-flex align-items-start", /* Sono uguali le due col, sopra e sotto hanno la stessa tipologia di classi */
+            Comm_single_cell_up : "col-4 p-0 h-100 flex_cent flex-column pt-5",
+            Comm_single_cell_down : "col-4 p-0 h-100 flex_cent flex-column pb-5",
             /* Classi Dinamiche - communities_Data */
             Comm_Data : "abs col-9 p-0 h_40 text-start communities_data",
             /* Dati dinamici, sopra */

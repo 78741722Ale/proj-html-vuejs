@@ -5,12 +5,9 @@
                 <!-- Descrizione delle specialità h-40 -->
                 <div :class="specialty_desc">
                     <!-- titolo -->
-                    <h2 class="pb-3 title_specialty">Specialty Services</h2>
+                    <h2 class="pt-3 pb-4 title_specialty">{{specialty_title}}</h2>
                     <!-- Paragrafo -->                   
-                    <p class="pt-2 w-75">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos commodi totam autem, 
-                        nesciunt deleniti dolorem eos reprehenderit consequatur excepturi ea?
-                    </p>
+                    <p class="pt-3 w-75 para_specialty">{{specialty_p}}</p>
                 </div>
                 <!-- Card dei servizi -->
                 <div :class="specialty_cards_cont">
@@ -48,9 +45,15 @@ export default {
             specialty_single_card:"col-3 product_service_card h-75 flex_cent flex-column", 
             /* Classi dinamiche - Singola card */  
             scard_title: "col-12 h_40",
-            scard_text: "h_60 col-10 pt-4",   
+            scard_text: "h_60 col-10 pt-4 span_specialty_card",   
             scard_icon: "col-12 h_60 pt-4", 
             scard_button: "btn btn-primary w-100 btn_services",
+            /* Contenuto Dinamico */
+            specialty_title : "Specialty Services",
+            specialty_p : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos commodi totam autem, nesciunt deleniti dolorem eos reprehenderit consequatur excepturi ea?",
+
+
+            
             /* Array di oggetto per dinamicità cards */
             cards_content: [
                 /* Prima card - Small Business Loans */

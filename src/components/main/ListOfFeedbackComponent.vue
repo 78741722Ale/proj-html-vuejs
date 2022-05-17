@@ -47,7 +47,7 @@ export default {
                 {   
                     partner:"Bonjour Cafe",
                     logo_part : require("@/assets/img/client-logo-1-1-200x87.png"),
-                    text: "Avada Finance offers a fantastic service! It is so easy to use and the customer support is the best around. This payment option is my number one choice. I always recommend it.",
+                    text: "'Avada Finance offers a fantastic service! It is so easy to use and the customer support is the best around. This payment option is my number one choice. I always recommend it.'",
                     author:"Andre Mendoza",
                     role:"Creative Market"
                 },
@@ -55,7 +55,7 @@ export default {
                 {   
                     partner:"Futuristic",
                     logo_part : require("@/assets/img/client-logo-2-200x87.png"),
-                    text: "Avada Finance offers a fantastic service! It is so easy to use and the customer support is the best around. This payment option is my number one choice. I always recommend it.",
+                    text: "'Avada Finance offers a fantastic service! It is so easy to use and the customer support is the best around. This payment option is my number one choice. I always recommend it.'",
                     author:"Andre Mendoza",
                     role:"Creative Market"
                 },
@@ -63,7 +63,7 @@ export default {
                 {   
                     partner:"Electricity",
                     logo_part : require("@/assets/img/client-logo-3-200x87.png"),
-                    text: "Avada Finance offers a fantastic service! It is so easy to use and the customer support is the best around. This payment option is my number one choice. I always recommend it.",
+                    text: "'Avada Finance offers a fantastic service! It is so easy to use and the customer support is the best around. This payment option is my number one choice. I always recommend it.'",
                     author:"Andre Mendoza",
                     role:"Creative Market"
                 },
